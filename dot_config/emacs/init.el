@@ -64,6 +64,12 @@
 
 (use-package holidays
   :custom
+  (holiday-general-holidays nil)
+  (holiday-bahai-holidays nil)
+  (holiday-christian-holidays nil)
+  (holiday-hebrew-holidays nil)
+  (holiday-islamic-holidays nil)
+  (holiday-oriental-holidays nil)
   (holiday-other-holidays
    '((holiday-fixed 4 15 "Steal Something from Work Day")
      (holiday-fixed 5 1 "International Workers' Day")
