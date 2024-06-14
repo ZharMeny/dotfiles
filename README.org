@@ -1,0 +1,5 @@
+#+title: My dotfiles
+My dotfiles repository, managed by [[https://chezmoi.io][chezmoi]].
+* License
+All code in this repository is licensed under GNU GPL 3.0 or later,
+unless noted otherwise.
