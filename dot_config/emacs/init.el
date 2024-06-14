@@ -285,6 +285,7 @@
   :ensure (:ref "9c166c4b96a0b1e85401bcc6fb95ce021e7b5013"))
 
 (use-package embark-consult
+  :after embark
   :ensure)
 
 (use-package emms
@@ -344,9 +345,11 @@
   :ensure (:ref "1de9dcb83eacfb162b6d9a118a4770b1281bcd84"))
 
 (use-package git-commit
+  :after magit
   :ensure)
 
 (use-package magit-section
+  :after magit
   :ensure)
 
 (use-package with-editor
