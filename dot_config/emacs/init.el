@@ -239,9 +239,10 @@
   :ensure (:ref "61766b50b24fa16be519d77795dc63522e04dce8"))
 
 (use-package apheleia-formatters
-  :config (add-to-list 'apheleia-mode-alist '(nix-ts-mode . nixfmt))
-  :after apheleia
-  :defines apheleia-mode-alist)
+  :custom
+  (apheleia-mode-alist
+   (add-to-list 'apheleia-mode-alist '(nix-ts-mode . nixfmt)))
+  :after apheleia)
 
 (use-package consult
   :ensure (:ref "fe4852280006e61be7f1374d021ee06155ce5a26"))
