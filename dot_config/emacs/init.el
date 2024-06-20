@@ -49,18 +49,12 @@
 (use-package elec-pair
   :custom (electric-pair-mode t))
 
-(use-package em-hist
-  :custom (eshell-hist-ignoredups t))
-
 (use-package flymake
   :config
   (remove-hook
    'flymake-diagnostic-functions
    'flymake-proc-legacy-flymake)
   :hook prog-mode)
-
-(use-package frame
-  :custom (blink-cursor-mode nil))
 
 (use-package holidays
   :custom
@@ -136,20 +130,8 @@
 (use-package nsm
   :custom (network-security-level 'paranoid))
 
-(use-package org
-  :custom (org-agenda-files `(,org-directory)))
-
-(use-package org-agenda
-  :bind ("C-c a" . org-agenda))
-
-(use-package org-clock
-  :custom (org-clock-sound t))
-
 (use-package org-src
   :custom (org-src-preserve-indentation t))
-
-(use-package prog-mode
-  :custom (global-prettify-symbols-mode t))
 
 (use-package rust-ts-mode)
 
@@ -171,9 +153,6 @@
 (use-package so-long
   :custom (global-so-long-mode t))
 
-(use-package tooltip
-  :custom (tooltip-mode nil))
-
 (use-package toml-ts-mode)
 
 (use-package treesit
@@ -181,9 +160,6 @@
 
 (use-package url-vars
   :custom (url-privacy-level 'paranoid))
-
-(use-package vc-hooks
-  :custom (vc-handled-backends '(Git)))
 
 (use-package yaml-ts-mode)
 
@@ -237,12 +213,6 @@
 (use-package apheleia
   :custom (apheleia-global-mode t)
   :ensure (:ref "61766b50b24fa16be519d77795dc63522e04dce8"))
-
-(use-package apheleia-formatters
-  :custom
-  (apheleia-mode-alist
-   (add-to-list 'apheleia-mode-alist '(nix-ts-mode . nixfmt)))
-  :after apheleia)
 
 (use-package consult
   :ensure (:ref "fe4852280006e61be7f1374d021ee06155ce5a26"))
@@ -319,11 +289,6 @@
 (use-package modus-themes
   :config (load-theme 'modus-vivendi :no-confirm)
   :ensure (:ref "1090a80a76c77d215b948d68a707fbb7e2b8d407"))
-
-;; Is it really going to end up like this?
-(use-package nix-ts-mode
-  :mode "\\.nix\\'"
-  :ensure (:ref "1528e47bd1ce187e65e7b87919f30617ccba4ca9"))
 
 (use-package package-lint
   :ensure (:ref "972dd8403ac8d2d43f298ef89a6b118e49c7355f"))
