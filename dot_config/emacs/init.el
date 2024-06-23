@@ -244,6 +244,7 @@
      "https://vkc.sh/feed/"
      "https://wingolog.org/feed/atom"
      "https://www.florkofcows.com/comic/atom/"
+     "https://www.rousette.org.uk/index.xml"
      "https://xeiaso.net/blog.rss"
      "https://xkcd.com/atom.xml"))
   :ensure (:ref "5c05a1eab37bc113ecb158a4d57fe05352fa2c6a"))
