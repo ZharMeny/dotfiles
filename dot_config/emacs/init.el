@@ -211,7 +211,9 @@
 ;;;; External packages
 
 (use-package apheleia
-  :custom (apheleia-global-mode t)
+  :custom
+  (apheleia-global-mode t)
+  (apheleia-mode-lighter "")
   :ensure (:ref "61766b50b24fa16be519d77795dc63522e04dce8"))
 
 (use-package consult
