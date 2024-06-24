@@ -224,6 +224,13 @@
   :bind ("C-c n c" . denote)
   :ensure (:ref "b8fd5afe8fec763438b32bd470d6c5d690c1f43a"))
 
+;; TEMP: until Emacs 30
+(use-package editorconfig
+  :custom
+  (editorconfig-mode 1)
+  (editorconfig-mode-lighter "")
+  :ensure (:ref "1651294334f3987d749eeb287f11d256cf2ba5b1"))
+
 (use-package elfeed
   :custom
   (elfeed-feeds
