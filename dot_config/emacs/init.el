@@ -235,7 +235,7 @@
 
 (use-package editorconfig
   :custom
-  (editorconfig-mode 1)
+  (editorconfig-mode t)
   (editorconfig-mode-lighter "")
   ;; TEMP: until Emacs 30
   :ensure (:ref "1651294334f3987d749eeb287f11d256cf2ba5b1"))
