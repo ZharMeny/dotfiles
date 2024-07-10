@@ -259,7 +259,7 @@
    ([remap isearch-edit-string] . consult-isearch-history)
    :map minibuffer-local-map
    ([remap next-matching-history-element] . consult-history))
-  :ensure (:ref "fe4852280006e61be7f1374d021ee06155ce5a26"))
+  :ensure (:ref "acf8ab2c0ce7226e599ad6d564d88dd282574b09"))
 
 (use-package consult-compile
   :bind ("M-g e" . consult-compile-error))
@@ -296,7 +296,7 @@
 
 (use-package denote
   :bind ("C-c n c" . denote)
-  :ensure (:ref "b8fd5afe8fec763438b32bd470d6c5d690c1f43a"))
+  :ensure (:ref "b1e3db3e6115f3c2fc9c37a6f0a7321b95573601"))
 
 (use-package editorconfig
   :custom
@@ -342,7 +342,7 @@
   :ensure)
 
 (use-package emms
-  :ensure (:ref "2c328f0a4d46c008d409bbe44994588816adf221"))
+  :ensure (:ref "b5567be2176dcbdf42aa2d0ccad32a44f245dd09"))
 
 (use-package emms-score
   :hook (elpaca-after-init . emms-score-disable))
@@ -353,22 +353,22 @@
   (elpaca-after-init . emms-default-players))
 
 (use-package git-modes
-  :ensure (:ref "52ea2a1281ea9df9b8732fe2add0e6a0c9c2cd11"))
+  :ensure (:ref "7901415b39bef1b789d161ca2c10dfb910d13780"))
 
 (use-package haskell-mode
   :ensure (:ref "727f72a2a4b8e4fd0a7b62129668baea55a2c3e0"))
 
 (use-package magit
-  :ensure (:ref "df58c94081370e2c1aa7ab9ba90462f6d690800d"))
+  :ensure (:ref "9d1f8db507e080e032943a3ed1445bd8d9aaa9fc"))
 
 (use-package marginalia
   :custom (marginalia-mode t)
-  :ensure (:ref "da72da4622c7b38741e6968678028f7e0564816c"))
+  :ensure (:ref "87c227b697de61f6530e8f9353d24470007f0420"))
 
 ;; TEMP: until Emacs 30
 (use-package modus-themes
   :config (load-theme 'modus-vivendi :no-confirm)
-  :ensure (:ref "1090a80a76c77d215b948d68a707fbb7e2b8d407"))
+  :ensure (:ref "a9f709e3448ff3def66328db74f5ca41366da957"))
 
 (use-package package-lint
   :ensure (:ref "972dd8403ac8d2d43f298ef89a6b118e49c7355f"))
@@ -376,7 +376,7 @@
 (use-package transient
   :custom (transient-history-limit 0)
   ;; TEMP: until Emacs 30
-  :ensure (:ref "a42b2f6992b27e8da924d4ff86ef9a33b6804b84"))
+  :ensure (:ref "32b7a99bf25fbf43fcc6efb9712a2c0888edd3eb"))
 
 (use-package wgrep
   :ensure (:ref "208b9d01cfffa71037527e3a324684b3ce45ddc4"))
@@ -385,7 +385,7 @@
 
 ;; TEMP: until Emacs 30
 (use-package compat
-  :ensure (:ref "80dbd9bc5efee05a479663f8cfd0cc9e0a30dac5"))
+  :ensure (:ref "09dce8a193c5a70277512263782b82fa1cba84c0"))
 
 (use-package dash
   :ensure (:ref "1de9dcb83eacfb162b6d9a118a4770b1281bcd84"))
@@ -399,6 +399,6 @@
   :ensure)
 
 (use-package with-editor
-  :ensure (:ref "f6a3fc8f6735fbc804e02f9c54bc621746afd5b0"))
+  :ensure (:ref "6c9a51b72fa7f454a5a123f738a6a067972eca4e"))
 
 ;;; init.el ends here
