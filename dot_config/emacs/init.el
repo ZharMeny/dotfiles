@@ -345,14 +345,12 @@
   :ensure (:ref "2c328f0a4d46c008d409bbe44994588816adf221"))
 
 (use-package emms-score
-  :hook (elpaca-after-init . emms-score-disable)
-  :after emms)
+  :hook (elpaca-after-init . emms-score-disable))
 
 (use-package emms-setup
   :hook
   (elpaca-after-init . emms-all)
-  (elpaca-after-init . emms-default-players)
-  :after emms)
+  (elpaca-after-init . emms-default-players))
 
 (use-package git-modes
   :ensure (:ref "52ea2a1281ea9df9b8732fe2add0e6a0c9c2cd11"))
