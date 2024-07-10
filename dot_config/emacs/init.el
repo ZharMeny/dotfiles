@@ -168,6 +168,11 @@
 (use-package url-vars
   :custom (url-privacy-level 'paranoid))
 
+(use-package xref
+  :custom
+  (xref-show-xrefs-function #'consult-xref)
+  (xref-show-definitions-function #'consult-xref))
+
 (use-package yaml-ts-mode)
 
 ;;;; Elpaca
@@ -222,7 +227,69 @@
   :ensure (:ref "61766b50b24fa16be519d77795dc63522e04dce8"))
 
 (use-package consult
+  :bind
+  (("C-c M-x" . consult-mode-command)
+   ("C-c h" . consult-history)
+   ("C-c m" . consult-man)
+   ("M-g k" . consult-global-mark)
+   ("M-g m" . consult-mark)
+   ("M-g o" . consult-outline)
+   ("M-s G" . consult-git-grep)
+   ("M-s L" . consult-line-multi)
+   ("M-s c" . consult-locate)
+   ("M-s d" . consult-fd)
+   ("M-s e" . consult-isearch-history)
+   ("M-s g" . consult-grep)
+   ("M-s k" . consult-keep-lines)
+   ("M-s l" . consult-line)
+   ("M-s r" . consult-ripgrep)
+   ("M-s u" . consult-focus-lines)
+   ([remap bookmark-jump] . consult-bookmark)
+   ([remap goto-line] . consult-goto-line)
+   ([remap project-switch-to-buffer] . consult-project-buffer)
+   ([remap repeat-complex-command] . consult-complex-command)
+   ([remap switch-to-buffer-other-frame] . consult-buffer-other-frame)
+   ([remap switch-to-buffer-other-tab] . consult-buffer-other-tab)
+   ([remap switch-to-buffer-other-window] . consult-buffer-other-window)
+   ([remap switch-to-buffer] . consult-buffer)
+   ([remap yank-pop] . consult-yank-pop)
+   :map isearch-mode-map
+   ("M-s L" . consult-line-multi)
+   ("M-s l" . consult-line)
+   ([remap isearch-edit-string] . consult-isearch-history)
+   :map minibuffer-local-map
+   ([remap next-matching-history-element] . consult-history))
   :ensure (:ref "fe4852280006e61be7f1374d021ee06155ce5a26"))
+
+(use-package consult-compile
+  :bind ("M-g e" . consult-compile-error))
+
+(use-package consult-flymake
+  :bind ("M-g f" . consult-flymake))
+
+(use-package consult-imenu
+  :bind
+  ("M-g I" . consult-imenu-multi)
+  ("M-g i" . consult-imenu))
+
+(use-package consult-info
+  :bind
+  ("C-c i" . consult-info)
+  ([remap Info-search] . consult-info))
+
+(use-package consult-kmacro
+  :bind ("C-c k" . consult-kmacro))
+
+(use-package consult-org
+  :bind
+  (:map org-mode-map
+        ([remap consult-outline] . consult-org-heading)))
+
+(use-package consult-register
+  :bind
+  ("C-M-#" . consult-register)
+  ("M-#" . consult-register-load)
+  ("M-'" . consult-register-store))
 
 (use-package cue-ts-mode
   :ensure (cue-ts-mode :host github :repo "ZharMeny/cue-ts-mode"))
