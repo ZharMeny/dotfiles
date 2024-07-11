@@ -259,6 +259,13 @@
 (use-package consult-compile
   :bind ("M-g e" . consult-compile-error))
 
+(use-package consult-denote
+  :custom
+  (consult-denote-find-command #'consult-fd)
+  (consult-denote-grep-command #'consult-ripgrep)
+  (consult-denote-mode t)
+  :ensure (:ref "decdaa3935aa79b23f8ceab5768b248ee15e65fd"))
+
 (use-package consult-flymake
   :bind ("M-g f" . consult-flymake))
 
