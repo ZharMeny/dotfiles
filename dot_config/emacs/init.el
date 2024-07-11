@@ -270,12 +270,10 @@
 (use-package consult-imenu
   :bind
   ("M-g I" . consult-imenu-multi)
-  ("M-g i" . consult-imenu))
+  ([remap imenu] . consult-imenu))
 
 (use-package consult-info
-  :bind
-  ("C-c i" . consult-info)
-  ([remap Info-search] . consult-info))
+  :bind ([remap Info-search] . consult-info))
 
 (use-package consult-kmacro
   :bind ("C-c k" . consult-kmacro))
