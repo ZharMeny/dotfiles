@@ -282,8 +282,7 @@
 
 (use-package consult-org
   :bind
-  (:map org-mode-map
-        ([remap consult-outline] . consult-org-heading)))
+  (:map org-mode-map ([remap consult-outline] . consult-org-heading)))
 
 (use-package consult-register
   :bind
