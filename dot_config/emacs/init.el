@@ -126,11 +126,6 @@
 (use-package mb-depth
   :custom (minibuffer-depth-indicate-mode t))
 
-(use-package minibuffer
-  :custom
-  (completion-styles
-   '(basic substring partial-completion initials flex)))
-
 (use-package novice
   :custom (disabled-command-function nil))
 
