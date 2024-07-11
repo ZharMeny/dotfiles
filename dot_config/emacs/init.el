@@ -357,9 +357,9 @@
   :custom (marginalia-mode t)
   :ensure (:ref "87c227b697de61f6530e8f9353d24470007f0420"))
 
-;; TEMP: until Emacs 30
 (use-package modus-themes
   :config (load-theme 'modus-vivendi :no-confirm)
+  ;; TEMP: until Emacs 30
   :ensure (:ref "a9f709e3448ff3def66328db74f5ca41366da957"))
 
 (use-package package-lint
