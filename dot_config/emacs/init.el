@@ -8,9 +8,9 @@
 ;; This file is not part of GNU Emacs.
 
 ;; This file is free software; you can redistribute it and/or modify
-;; it under the terms of the GNU General Public License as published
-;; by the Free Software Foundation, either version 3 of the License,
-;; or (at your option) any later version.
+;; it under the terms of the GNU General Public License as published by
+;; the Free Software Foundation, either version 3 of the License, or
+;; (at your option) any later version.
 
 ;; This file is distributed in the hope that it will be useful,
 ;; but WITHOUT ANY WARRANTY; without even the implied warranty of
@@ -22,11 +22,11 @@
 
 ;;; Commentary:
 
-;; The init file is where all the magic happens: it is loaded when
-;; Emacs is started.  Emacs looks for the init file using the
-;; filenames ~/.emacs.el, ~/.emacs, or ~/.emacs.d/init.el, in that
-;; order.  Additionally, Emacs can look in an XDG-compatible location
-;; for init.el, the default is the directory ~/.config/emacs.
+;; The init file is where all the magic happens: it is loaded when Emacs
+;; is started.  Emacs looks for the init file using the filenames
+;; ~/.emacs.el, ~/.emacs, or ~/.emacs.d/init.el, in that order.
+;; Additionally, Emacs can look in an XDG-compatible location for
+;; init.el, the default is the directory ~/.config/emacs.
 
 ;;; Code:
 
