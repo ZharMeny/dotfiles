@@ -354,6 +354,12 @@
   (elpaca-after-init . emms-all)
   (elpaca-after-init . emms-default-players))
 
+(use-package geiser
+  :ensure (:ref "a81969a5271f155d2d1e389ccbe47e1c7ec36ae7"))
+
+(use-package geiser-guile
+  :ensure (:ref "ebdd1923b0780778706ea6b16aa2b0ce3e7dc33d"))
+
 (use-package git-modes
   :ensure (:ref "7901415b39bef1b789d161ca2c10dfb910d13780"))
 
