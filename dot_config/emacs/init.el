@@ -123,6 +123,10 @@
 (use-package icomplete
   :custom (icomplete-mode t))
 
+(use-package lisp-mode
+  :preface (defun zharmeny/force-soft-tabs () (indent-tabs-mode -1))
+  :hook ((lisp-data-mode scheme-mode) . zharmeny/force-soft-tabs))
+
 (use-package mb-depth
   :custom (minibuffer-depth-indicate-mode t))
 
