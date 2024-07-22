@@ -368,9 +368,6 @@
 (use-package emms
   :ensure (:ref "b5567be2176dcbdf42aa2d0ccad32a44f245dd09"))
 
-(use-package emms-score
-  :hook (elpaca-after-init . emms-score-disable))
-
 (use-package emms-setup
   :hook
   (elpaca-after-init . emms-all)
