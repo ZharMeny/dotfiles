@@ -397,7 +397,8 @@
   :ensure (:ref "87c227b697de61f6530e8f9353d24470007f0420"))
 
 (use-package modus-themes
-  :config (load-theme 'modus-vivendi :no-confirm)
+  :init (load-theme 'modus-vivendi :no-confirm)
+  :bind ([f5] . modus-themes-toggle)
   ;; TEMP: until Emacs 30
   :ensure (:ref "a9f709e3448ff3def66328db74f5ca41366da957"))
 
