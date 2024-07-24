@@ -399,6 +399,9 @@
 (use-package modus-themes
   :init (load-theme 'modus-vivendi :no-confirm)
   :bind ([f5] . modus-themes-toggle)
+  :custom
+  (modus-themes-bold-constructs t)
+  (modus-themes-italic-constructs t)
   ;; TEMP: until Emacs 30
   :ensure (:ref "a9f709e3448ff3def66328db74f5ca41366da957"))
 
