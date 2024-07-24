@@ -56,6 +56,11 @@
 (use-package elec-pair
   :custom (electric-pair-mode t))
 
+(use-package faces
+  :config
+  (set-face-attribute 'default nil :height 120)
+  (set-face-font 'default "Iosevka"))
+
 (use-package flymake
   :config
   (remove-hook
