@@ -32,8 +32,6 @@
 
 ;;;; Core packages
 
-(set-language-environment "UTF-8")
-
 (use-package emacs
   :no-require
   :custom
@@ -137,6 +135,10 @@
 
 (use-package minibuffer
   :custom (completion-styles '(basic partial-completion flex)))
+
+(use-package mule-cmds
+  :no-require
+  :config (set-language-environment "UTF-8"))
 
 (use-package novice
   :custom (disabled-command-function nil))
