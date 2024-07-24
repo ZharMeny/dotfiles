@@ -169,6 +169,10 @@
 (use-package so-long
   :custom (global-so-long-mode t))
 
+(use-package startup
+  :no-require
+  :custom (inhibit-startup-screen t))
+
 (use-package toml-ts-mode)
 
 (use-package treesit
