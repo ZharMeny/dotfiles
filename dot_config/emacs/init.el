@@ -239,6 +239,10 @@
   (apheleia-mode-lighter "")
   :ensure (:ref "61766b50b24fa16be519d77795dc63522e04dce8"))
 
+(use-package apheleia-formatters
+  :defines apheleia-mode-alist
+  :config (add-to-list 'apheleia-mode-alist '(scheme-mode . lisp-indent)))
+
 (use-package consult
   :bind
   (("C-c M-x" . consult-mode-command)
