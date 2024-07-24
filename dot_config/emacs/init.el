@@ -32,15 +32,6 @@
 
 ;;;; Core packages
 
-(use-package emacs
-  :no-require
-  :custom
-  (enable-recursive-minibuffers t)
-  (menu-bar-mode nil)
-  (tool-bar-mode nil)
-  (truncate-lines t)
-  (visible-bell t))
-
 (use-package cc-vars
   :custom
   (c-default-style
@@ -53,6 +44,15 @@
 
 (use-package elec-pair
   :custom (electric-pair-mode t))
+
+(use-package emacs
+  :no-require
+  :custom
+  (enable-recursive-minibuffers t)
+  (menu-bar-mode nil)
+  (tool-bar-mode nil)
+  (truncate-lines t)
+  (visible-bell t))
 
 (use-package faces
   :config
