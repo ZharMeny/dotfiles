@@ -351,24 +351,21 @@
 (use-package elfeed
   :custom
   (elfeed-feeds
-   '("https://blog.rust-lang.org/feed.xml"
+   '("https://blog.gtk.org/feed/"
+     "https://blog.rust-lang.org/feed.xml"
      "https://blog.rust-lang.org/inside-rust/feed.xml"
+     "https://blogs.gnome.org/alatiera/feed/"
      "https://blogs.gnome.org/alicem/feed/"
      "https://blogs.gnome.org/chergert/feed/"
-     "https://irreal.org/blog/?feed=rss2"
+     "https://blogs.gnome.org/haeckerfelix/feed/"
+     "https://blogs.gnome.org/jsparber/feed/"
+     "https://blogs.gnome.org/shell-dev/feed/"
+     "https://blogs.gnome.org/sophieh/feed/"
      "https://protesilaos.com/master.xml"
-     "https://quiltmc.org/feed.xml"
-     "https://samsai.eu/index.xml"
-     "https://servo.org/blog/feed.xml"
      "https://solar.lowtechmagazine.com/posts/index.xml"
-     "https://thelambdalab.xyz/gitweb/index.cgi?p=elpher.git;a=atom"
      "https://thephd.dev/feed.xml"
      "https://thisweek.gnome.org/index.xml"
-     "https://utopic.work/devlogs/feed.rss"
-     "https://vkc.sh/feed/"
      "https://wingolog.org/feed/atom"
-     "https://www.florkofcows.com/comic/atom/"
-     "https://www.rousette.org.uk/index.xml"
      "https://xeiaso.net/blog.rss"
      "https://xkcd.com/atom.xml"))
   :ensure (:ref "5c05a1eab37bc113ecb158a4d57fe05352fa2c6a"))
