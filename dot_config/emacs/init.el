@@ -57,7 +57,8 @@
 (use-package faces
   :config
   (set-face-attribute 'default nil :height 120)
-  (set-face-font 'default "Iosevka"))
+  (set-face-font 'default "Iosevka")
+  (set-face-font 'variable-pitch "Iosevka Aile"))
 
 (use-package flymake
   :config
