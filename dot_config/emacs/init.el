@@ -278,7 +278,7 @@
    ([remap isearch-edit-string] . consult-isearch-history)
    :map minibuffer-local-map
    ([remap next-matching-history-element] . consult-history))
-  :ensure (:ref "acf8ab2c0ce7226e599ad6d564d88dd282574b09"))
+  :ensure (:ref "4889458dccf842ab6223099f8a73ff8b147e9459"))
 
 (use-package consult-compile
   :bind ("M-g e" . consult-compile-error))
@@ -341,14 +341,14 @@
    ("C-c C-d C-i" . denote-link-dired-marked-notes)
    ("C-c C-d C-k" . denote-dired-rename-marked-files-with-keywords)
    ("C-c C-d C-r" . denote-dired-rename-files))
-  :ensure (:ref "b1e3db3e6115f3c2fc9c37a6f0a7321b95573601"))
+  :ensure (:ref "02d296d8e8278d5049e7afefb4f973c2b1b89036"))
 
 (use-package editorconfig
   :custom
   (editorconfig-mode t)
   (editorconfig-mode-lighter "")
   ;; TEMP: until Emacs 30
-  :ensure (:ref "1651294334f3987d749eeb287f11d256cf2ba5b1"))
+  :ensure (:ref "7c7b1f81f8fac654791fa2b04da55edced2cef33"))
 
 (use-package elfeed
   :custom
@@ -373,11 +373,11 @@
   :ensure (:ref "5c05a1eab37bc113ecb158a4d57fe05352fa2c6a"))
 
 (use-package elpher
-  :ensure (:ref "56bc74e224d9835c41b6e6b68c9705b60e6dbbe2"))
+  :ensure (:ref "0bd12913940a047724d830725bf8649e4f8df499"))
 
 (use-package embark
   :bind ("C-;" . embark-act)
-  :ensure (:ref "9c166c4b96a0b1e85401bcc6fb95ce021e7b5013"))
+  :ensure (:ref "19a13e344e04bbf861eaa74491b23da52b398672"))
 
 (use-package embark-consult
   ;; embark monorepo
@@ -398,17 +398,17 @@
   :ensure (:ref "ebdd1923b0780778706ea6b16aa2b0ce3e7dc33d"))
 
 (use-package git-modes
-  :ensure (:ref "7901415b39bef1b789d161ca2c10dfb910d13780"))
+  :ensure (:ref "d96fa7a3c7d754812675b37247c6a77e459eec53"))
 
 (use-package haskell-mode
   :ensure (:ref "727f72a2a4b8e4fd0a7b62129668baea55a2c3e0"))
 
 (use-package magit
-  :ensure (:ref "9d1f8db507e080e032943a3ed1445bd8d9aaa9fc"))
+  :ensure (:ref "c575c2e09a1cf0cc245400c208dc0ce4ae424d47"))
 
 (use-package marginalia
   :custom (marginalia-mode t)
-  :ensure (:ref "87c227b697de61f6530e8f9353d24470007f0420"))
+  :ensure (:ref "77b8e568d8e14090ee40d9549fd727a62eb82f7d"))
 
 (use-package modus-themes
   :init (load-theme 'modus-vivendi :no-confirm)
@@ -417,7 +417,7 @@
   (modus-themes-bold-constructs t)
   (modus-themes-italic-constructs t)
   ;; TEMP: until Emacs 30
-  :ensure (:ref "a9f709e3448ff3def66328db74f5ca41366da957"))
+  :ensure (:ref "8b210e065e04dd4495ae89a179636205cee7ce9d"))
 
 (use-package package-lint
   :ensure (:ref "972dd8403ac8d2d43f298ef89a6b118e49c7355f"))
@@ -425,7 +425,7 @@
 (use-package transient
   :custom (transient-history-limit 0)
   ;; TEMP: until Emacs 30
-  :ensure (:ref "32b7a99bf25fbf43fcc6efb9712a2c0888edd3eb"))
+  :ensure (:ref "2a680c21e2be0b055e0e801d43c92792e5305acc"))
 
 (use-package wgrep
   :ensure (:ref "208b9d01cfffa71037527e3a324684b3ce45ddc4"))
@@ -448,6 +448,6 @@
   :ensure)
 
 (use-package with-editor
-  :ensure (:ref "6c9a51b72fa7f454a5a123f738a6a067972eca4e"))
+  :ensure (:ref "97dd5dd4b69a040506f4fc104dc0b855e84c1c0f"))
 
 ;;; init.el ends here
