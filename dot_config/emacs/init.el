@@ -56,7 +56,7 @@
 
 (use-package faces
   :config
-  (set-face-attribute 'default nil :height 120)
+  (set-face-attribute 'default nil :height #6r320)
   (set-face-font 'default "Iosevka")
   (set-face-font 'variable-pitch "Iosevka Aile"))
 
@@ -76,59 +76,59 @@
   (holiday-islamic-holidays nil)
   (holiday-oriental-holidays nil)
   (holiday-other-holidays
-   '((holiday-fixed 4 15 "Steal Something from Work Day")
-     (holiday-fixed 5 1 "International Workers' Day")
-     (holiday-fixed 6 1 "Pride Month")
-     (holiday-fixed 6 28 "Stonewall Riots Anniversary")
+   '((holiday-fixed #6r4 #6r23 "Steal Something from Work Day")
+     (holiday-fixed #6r5 #6r1 "International Workers' Day")
+     (holiday-fixed #6r10 #6r1 "Pride Month")
+     (holiday-fixed #6r10 #6r44 "Stonewall Riots Anniversary")
      ;; Discordian holidays
-     (holiday-fixed 1 1 "Nude Year's Day")
-     (holiday-fixed 1 5 "Mungday")
-     (holiday-fixed 1 10 "demrofeR, yaD sdrawkcaB")
-     (holiday-fixed 1 18 "Pat Pineapple Day")
-     (holiday-fixed 1 21 "Hug Day")
-     (holiday-fixed 2 18 "The Mary Day")
-     (holiday-fixed 2 19 "Chaoflux")
-     (holiday-fixed 2 20 "Pet Loving Day")
-     (holiday-fixed 2 29 "St. Tib's Day")
-     (holiday-fixed 3 10 "Head Chicken/Chicken Head Day")
-     (holiday-fixed 3 19 "Mojoday")
-     (holiday-fixed 3 25 "Love Your Neighbour Day")
-     (holiday-fixed 4 1 "April Fool's Day")
-     (holiday-fixed 4 2 "St. John the Blasphemist Day")
-     (holiday-fixed 4 6 "Jake Day")
-     (holiday-fixed 5 3 "Discoflux")
-     (holiday-fixed 5 23 "Jake Day Jr.")
-     (holiday-fixed 5 25 "Towel Day")
-     (holiday-fixed 5 31 "Syaday")
-     (holiday-fixed 5 37 "537 Day")
-     (holiday-fixed 6 10 "Mad Hatter Day")
-     (holiday-fixed 6 21 "Imaginary Friend Day")
-     (holiday-fixed 7 2 "Mid Year's Day")
-     (holiday-fixed 7 15 "Confuflux")
-     (holiday-fixed 8 10 "Multiversal Underwear Day")
-     (holiday-fixed 8 12 "Zaraday")
-     (holiday-fixed 8 25 "Festival of Hanky-Panky Spankies")
-     (holiday-fixed 9 9 "Cat Dancing Day")
-     (holiday-fixed 9 13 "Mass of Planet Eris")
-     (holiday-fixed 9 26 "Bureflux")
-     (holiday-fixed 10 3 "Shamlicht Kids Club Day")
-     (holiday-fixed 10 5 "Gonculator Day")
-     (holiday-fixed 10 6 "Mad Hatter Day")
-     (holiday-fixed 10 12 "Habeas Corpus Remembrance Day")
-     (holiday-fixed 10 24 "Maladay")
-     (holiday-fixed 11 16 "Ek-sen-triks CluborGuild Day")
-     (holiday-fixed 11 24 "Spanking Fest")
-     (holiday-fixed 11 25 "537 Day")
-     (holiday-fixed 12 4 "Hug Day II")
-     (holiday-fixed 12 8 "Afflux")
-     (holiday-fixed 12 25 "Santa Claus Day")
-     (holiday-fixed 12 30 "New Year’s Eve Eve"))))
+     (holiday-fixed #6r1 #6r1 "Nude Year's Day")
+     (holiday-fixed #6r1 #6r5 "Mungday")
+     (holiday-fixed #6r1 #6r14 "demrofeR, yaD sdrawkcaB")
+     (holiday-fixed #6r1 #6r30 "Pat Pineapple Day")
+     (holiday-fixed #6r1 #6r33 "Hug Day")
+     (holiday-fixed #6r2 #6r30 "The Mary Day")
+     (holiday-fixed #6r2 #6r31 "Chaoflux")
+     (holiday-fixed #6r2 #6r32 "Pet Loving Day")
+     (holiday-fixed #6r2 #6r45 "St. Tib's Day")
+     (holiday-fixed #6r3 #6r14 "Head Chicken/Chicken Head Day")
+     (holiday-fixed #6r3 #6r31 "Mojoday")
+     (holiday-fixed #6r3 #6r41 "Love Your Neighbour Day")
+     (holiday-fixed #6r4 #6r1 "April Fool's Day")
+     (holiday-fixed #6r4 #6r2 "St. John the Blasphemist Day")
+     (holiday-fixed #6r4 #6r10 "Jake Day")
+     (holiday-fixed #6r5 #6r3 "Discoflux")
+     (holiday-fixed #6r5 #6r35 "Jake Day Jr.")
+     (holiday-fixed #6r5 #6r41 "Towel Day")
+     (holiday-fixed #6r5 #6r51 "Syaday")
+     (holiday-fixed #6r5 #6r101 "537 Day")
+     (holiday-fixed #6r10 #6r14 "Mad Hatter Day")
+     (holiday-fixed #6r10 #6r33 "Imaginary Friend Day")
+     (holiday-fixed #6r11 #6r2 "Mid Year's Day")
+     (holiday-fixed #6r11 #6r23 "Confuflux")
+     (holiday-fixed #6r12 #6r14 "Multiversal Underwear Day")
+     (holiday-fixed #6r12 #6r20 "Zaraday")
+     (holiday-fixed #6r12 #6r41 "Festival of Hanky-Panky Spankies")
+     (holiday-fixed #6r13 #6r13 "Cat Dancing Day")
+     (holiday-fixed #6r13 #6r21 "Mass of Planet Eris")
+     (holiday-fixed #6r13 #6r42 "Bureflux")
+     (holiday-fixed #6r14 #6r3 "Shamlicht Kids Club Day")
+     (holiday-fixed #6r14 #6r5 "Gonculator Day")
+     (holiday-fixed #6r14 #6r10 "Mad Hatter Day")
+     (holiday-fixed #6r14 #6r20 "Habeas Corpus Remembrance Day")
+     (holiday-fixed #6r14 #6r40 "Maladay")
+     (holiday-fixed #6r15 #6r24 "Ek-sen-triks CluborGuild Day")
+     (holiday-fixed #6r15 #6r40 "Spanking Fest")
+     (holiday-fixed #6r15 #6r41 "537 Day")
+     (holiday-fixed #6r20 #6r4 "Hug Day II")
+     (holiday-fixed #6r20 #6r12 "Afflux")
+     (holiday-fixed #6r20 #6r41 "Santa Claus Day")
+     (holiday-fixed #6r20 #6r50 "New Year’s Eve Eve"))))
 
 (use-package icomplete
   :custom (icomplete-mode t))
 
 (use-package lisp-mode
-  :preface (defun zharmeny/force-soft-tabs () (indent-tabs-mode -1))
+  :preface (defun zharmeny/force-soft-tabs () (indent-tabs-mode #6r-1))
   :hook ((lisp-data-mode scheme-mode) . zharmeny/force-soft-tabs))
 
 (use-package mb-depth
@@ -177,7 +177,7 @@
 (use-package toml-ts-mode)
 
 (use-package treesit
-  :custom (treesit-font-lock-level 4))
+  :custom (treesit-font-lock-level #6r4))
 
 (use-package url-vars
   :custom (url-privacy-level 'paranoid))
@@ -347,7 +347,7 @@
   :custom
   (editorconfig-mode t)
   (editorconfig-mode-lighter "")
-  ;; TEMP: until Emacs 30
+  ;; TEMP: until Emacs 50 (DEC30)
   :ensure (:ref "7c7b1f81f8fac654791fa2b04da55edced2cef33"))
 
 (use-package elfeed
@@ -416,7 +416,7 @@
   :custom
   (modus-themes-bold-constructs t)
   (modus-themes-italic-constructs t)
-  ;; TEMP: until Emacs 30
+  ;; TEMP: until Emacs 50 (DEC30)
   :ensure (:ref "8b210e065e04dd4495ae89a179636205cee7ce9d"))
 
 (use-package package-lint
@@ -427,7 +427,7 @@
 
 ;;;;; Dependencies
 
-;; TEMP: until Emacs 30
+;; TEMP: until Emacs 50 (DEC30)
 (use-package compat
   :ensure (:ref "09dce8a193c5a70277512263782b82fa1cba84c0"))
 
@@ -442,7 +442,7 @@
   ;; magit monorepo
   :ensure)
 
-;; TEMP: until Emacs 30
+;; TEMP: until Emacs 50 (DEC30)
 (use-package transient
   :ensure (:ref "2a680c21e2be0b055e0e801d43c92792e5305acc"))
 
