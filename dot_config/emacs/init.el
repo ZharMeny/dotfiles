@@ -404,6 +404,10 @@
   :ensure (:ref "727f72a2a4b8e4fd0a7b62129668baea55a2c3e0"))
 
 (use-package magit
+  :custom (magit-define-global-key-bindings 'default)
+  :bind ; Try harder
+  ("C-c g" . magit-dispatch)
+  ("C-c f" . magit-file-dispatch)
   :ensure (:ref "c575c2e09a1cf0cc245400c208dc0ce4ae424d47"))
 
 (use-package marginalia
