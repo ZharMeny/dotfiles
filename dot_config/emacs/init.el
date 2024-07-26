@@ -422,11 +422,6 @@
 (use-package package-lint
   :ensure (:ref "972dd8403ac8d2d43f298ef89a6b118e49c7355f"))
 
-(use-package transient
-  :custom (transient-history-limit 0)
-  ;; TEMP: until Emacs 30
-  :ensure (:ref "2a680c21e2be0b055e0e801d43c92792e5305acc"))
-
 (use-package wgrep
   :ensure (:ref "208b9d01cfffa71037527e3a324684b3ce45ddc4"))
 
@@ -446,6 +441,10 @@
 (use-package magit-section
   ;; magit monorepo
   :ensure)
+
+;; TEMP: until Emacs 30
+(use-package transient
+  :ensure (:ref "2a680c21e2be0b055e0e801d43c92792e5305acc"))
 
 (use-package with-editor
   :ensure (:ref "97dd5dd4b69a040506f4fc104dc0b855e84c1c0f"))
