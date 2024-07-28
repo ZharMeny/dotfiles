@@ -165,7 +165,12 @@
 
 (use-package startup
   :no-require
-  :custom (inhibit-startup-screen t))
+  :custom
+  (inhibit-startup-echo-area-message
+   (if (equal init-file-user "")
+       (user-login-name)
+     init-file-user))
+  (inhibit-startup-screen t))
 
 (use-package toml-ts-mode)
 
