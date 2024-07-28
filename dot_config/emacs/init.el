@@ -32,13 +32,6 @@
 
 ;;;; Core packages
 
-(use-package cc-vars
-  :custom
-  (c-default-style
-   '((java-mode . "java")
-     (awk-mode . "awk")
-     (other . "linux"))))
-
 (use-package display-line-numbers
   :hook (conf-mode prog-mode text-mode))
 
