@@ -361,6 +361,8 @@
      "https://blogs.gnome.org/jsparber/feed/"
      "https://blogs.gnome.org/shell-dev/feed/"
      "https://blogs.gnome.org/sophieh/feed/"
+     "https://libera.chat/atom.xml"
+     "https://maia.crimew.gay/feed.xml"
      "https://protesilaos.com/codelog.xml"
      "https://solar.lowtechmagazine.com/posts/index.xml"
      "https://thephd.dev/feed.xml"
