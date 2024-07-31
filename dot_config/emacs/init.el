@@ -47,6 +47,21 @@
   (truncate-lines t)
   (visible-bell t))
 
+(use-package erc
+  :preface
+  (defun irc ()
+    (interactive)
+    (erc-tls
+     :client-certificate
+     `(,(expand-file-name "~/libera.key")
+       ,(expand-file-name "~/libera.crt"))))
+  :custom (erc-nick "ZharMeny"))
+
+(use-package erc-join
+  :custom
+  (erc-autojoin-channels-alist
+   '((Libera.Chat "##rust" "#haskell"))))
+
 (use-package faces
   :config
   (set-face-attribute 'default nil :height #6r320)
